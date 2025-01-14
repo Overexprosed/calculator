@@ -1,0 +1,159 @@
+:root {
+    --background: #f6f6f6;
+    --font: #222;
+    --calculator: #aaa;
+    --screen: #eee;
+    --border: #333;
+    --btn: #eee;
+    --btn-hover: #ddd;
+    --btn-active: #ccc;
+    --btn-red: #faa;
+    --btn-red-hover: #e99;
+    --btn-red-active: #d88;
+    --btn-blue: #aaf;
+    --btn-blue-hover: #99e;
+    --btn-blue-active: #88d;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: var(--calculator);
+    width: 25vw;
+    height: 65vh;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.screen {
+    background-color: var(--screen);
+    width: 100%;
+    flex: 3;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.expression-container {
+    font-size: 25px;
+}
+
+.result-container {
+    font-size: 50px;
+}
+
+.expression-container,
+.result-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    gap: 1%;
+}
+
+.clear-btn-container {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.btn-container {
+    width: 100%;
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.btn-row {
+    display: flex;
+    gap: 2%;
+    flex: 1;
+}
+
+.btn {
+    flex: 1;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--btn);
+    font-size: 20px;
+}
+
+.clear-btn {
+    background-color: var(--btn-red);
+}
+
+.clear-btn:hover {
+    background-color: var(--btn-red-hover);
+}
+
+.delete-btn {
+    background-color: var(--btn-blue);
+}
+
+.delete-btn:hover {
+    background-color: var(--btn-blue-hover);
+}
+
+.clear-btn,
+.delete-btn {
+    height: 100%;
+    flex: 1;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.fa-github {
+    color: var(--font);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
