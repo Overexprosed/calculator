@@ -65,10 +65,12 @@ body {
 }
 
 .expression-container {
+    height: 30%;
     font-size: 25px;
 }
 
 .result-container {
+    height: 70%;
     font-size: 50px;
 }
 
@@ -76,6 +78,7 @@ body {
 .result-container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding-right: 5%;
     gap: 1%;
 }
@@ -111,6 +114,14 @@ body {
     font-size: 20px;
 }
 
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.btn:active {
+    background-color: var(--btn-active);
+}
+
 .clear-btn {
     background-color: var(--btn-red);
 }
@@ -119,12 +130,20 @@ body {
     background-color: var(--btn-red-hover);
 }
 
+.clear-btn:active {
+    background-color: var(--btn-red-active);
+}
+
 .delete-btn {
     background-color: var(--btn-blue);
 }
 
 .delete-btn:hover {
     background-color: var(--btn-blue-hover);
+}
+
+.delete-btn:active {
+    background-color: var(--btn-blue-active);
 }
 
 .clear-btn,
