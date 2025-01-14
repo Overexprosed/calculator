@@ -40,6 +40,10 @@ operatorButtons.forEach((button) => {
 clearButton.addEventListener('click', () => clear())
 
 equalButton.addEventListener('click', () => {
+    if (firstNumber.innerText === '' || result.innerText === '' || operator.innerText === '') {
+        return
+    }
+
     secondNumber.innerText = result.innerText
     equalOperator.innerText = '='
     result.innerText = evaluate(firstNumber.innerText, result.innerText, operator.innerText)
