@@ -67,11 +67,16 @@ body {
 .expression-container {
     height: 30%;
     font-size: 25px;
+    overflow: scroll;
 }
 
 .result-container {
     height: 70%;
     font-size: 50px;
+}
+
+#result {
+    overflow: scroll;
 }
 
 .expression-container,
