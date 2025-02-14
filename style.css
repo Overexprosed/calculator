@@ -34,7 +34,7 @@ body {
 
 .main {
     background-color: var(--calculator);
-    width: 300px;
+    width: 400px;
     height: min(600px, (max(80vh, 350px)));
     border: 2px solid var(--border);
     border-radius: 12px;
